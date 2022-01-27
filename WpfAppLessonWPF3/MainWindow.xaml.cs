@@ -72,7 +72,20 @@ namespace WpfAppLessonWPF3
                     textBox.TextDecorations = TextDecorations.Underline;
                 else textBox.TextDecorations = null;
             }
+        }
 
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (textBox != null)
+            {
+                //if (textBox.Foreground != Brush.Black)
+                Brush brush;
+                brush = textBox.Foreground;
+                // brush = 
+                if (brush != null)
+                    textBox.Foreground = brush;
+                //else textBox.TextDecorations = null;
+            }
         }
     }
 }
