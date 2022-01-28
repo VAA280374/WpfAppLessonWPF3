@@ -74,18 +74,29 @@ namespace WpfAppLessonWPF3
             }
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        private void RadioButtonBlack_Checked(object sender, RoutedEventArgs e)
         {
             if (textBox != null)
             {
-                //if (textBox.Foreground != Brush.Black)
-                Brush brush;
-                brush = textBox.Foreground;
-                // brush = 
+                Brush brush = (sender as RadioButton).Foreground;
                 if (brush != null)
+                {
                     textBox.Foreground = brush;
-                //else textBox.TextDecorations = null;
+                }
             }
+        }
+
+        private void radioBottonRed_Checked(object sender, RoutedEventArgs e)
+        {
+            if (textBox != null)
+            {
+                Brush brush = (sender as RadioButton).Foreground;
+                if (brush != null)
+                {
+                    textBox.Foreground = brush;
+                }
+            }
+
         }
     }
 }

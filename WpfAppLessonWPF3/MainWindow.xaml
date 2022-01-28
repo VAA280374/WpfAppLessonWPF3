@@ -40,8 +40,8 @@
             </ToolBar>
             <ToolBar Margin="5" Padding="5">
                 <StackPanel VerticalAlignment="Center">
-                    <RadioButton Content="Черный" IsChecked="True" Checked="RadioButton_Checked"/>
-                    <RadioButton Content="Красный" IsChecked="True"/>
+                    <RadioButton Content="Черный" IsChecked="True" Checked="RadioButtonBlack_Checked" Foreground="Black"/>
+                    <RadioButton Content="Красный" IsChecked="False" Checked="radioBottonRed_Checked" Foreground="Red"/>
                 </StackPanel>
             </ToolBar>
 
